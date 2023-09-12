@@ -68,7 +68,14 @@ const MyFooter = () => {
               </span>
               <span style={{ fontSize: "14px" }}>09:00~18:00</span>
             </div>
-            <p style={{ fontSize: "12px", color: "2f3438" }}>
+            <p
+              style={{
+                fontSize: "12px",
+                lineHeight: "20px",
+                letterSpacing: "-0.3px",
+                color: "2f3438",
+              }}
+            >
               평일: 전체 문의 상담 가능 주말,
               <tr />
               공휴일: 오늘의집 직접배송, 이사/시공/제품설치 <tr />
@@ -273,6 +280,7 @@ const MyFooter = () => {
         </div>
         <div
           style={{
+            marginLeft: "30px",
             fontSize: "12px",
             lineHeight: "20px",
             letterSpacing: "-0.3px",
@@ -298,6 +306,93 @@ const MyFooter = () => {
             고객님이 현금결제한 금액에 대해 우리은행과 채무지급보증 계약을
             체결하여 안전거래를 보장하고 있습니다. 서비스가입사실확인
           </p>
+          <div
+            style={{
+              display: "flex",
+
+              height: "40px",
+              gap: "6px",
+              WebkitBoxAlign: "center",
+              alignItems: "center",
+              WebkitBoxPack: "center",
+              justifyContent: "center",
+              border: "1px solid rgba(0, 0, 0, 0.08)",
+              float: "left",
+            }}
+          >
+            <img
+              width="32px"
+              alt="8f5b2c2e98ea1196"
+              src="https://github.com/icebear2n2/BE-Community-Service/assets/87232411/e67f4ab2-31ba-49d4-b701-97c0e87083d1"
+              style={{
+                overflowClipMargin: "content-box",
+                overflow: "clip",
+                float: "left",
+              }}
+            />
+            <div
+              style={{
+                width: "90%",
+                height: "28px",
+                float: "left",
+                fontSize: "10px",
+                lineHeight: "14px",
+                letterSpacing: "-0.3px",
+                whiteSpace: "nowrap",
+                marginRight: "6px 7px 6px 7px",
+              }}
+            >
+              오늘의집 서비스 운영
+              <tr />
+              2021. 09. 08 ~ 2024. 09. 07
+            </div>
+          </div>
+          <div
+            style={{
+              width: "102px",
+              height: "40px",
+              marginLeft: "6px",
+              gap: "6px",
+              WebkitBoxAlign: "center",
+              alignItems: "center",
+              WebkitBoxPack: "center",
+              justifyContent: "center",
+              border: "1px solid rgba(0, 0, 0, 0.08)",
+              float: "left",
+              textAlign: "center",
+              paddingTop: "4px",
+              paddingBottom: "4px",
+            }}
+          >
+            <img
+              width="32"
+              alt="d5fb816a58bb6a06"
+              src="https://github.com/icebear2n2/BE-Community-Service/assets/87232411/61dbfe97-aebd-4365-b058-68623c76c574"
+            />
+          </div>
+          <div
+            style={{
+              width: "102px",
+              height: "40px",
+              marginLeft: "6px",
+              gap: "6px",
+              WebkitBoxAlign: "center",
+              alignItems: "center",
+              WebkitBoxPack: "center",
+              justifyContent: "center",
+              border: "1px solid rgba(0, 0, 0, 0.08)",
+              float: "left",
+              textAlign: "center",
+              paddingTop: "4px",
+              paddingBottom: "4px",
+            }}
+          >
+            <img
+              width="32"
+              alt="d5fb816a58bb6a06"
+              src="https://github.com/icebear2n2/BE-Community-Service/assets/87232411/1c236831-d266-4bca-b4be-9ba60d9cb3e8"
+            />
+          </div>
         </div>
       </div>
     </div>
