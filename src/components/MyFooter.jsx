@@ -7,6 +7,7 @@ const MyFooter = () => {
         height: "320px",
         position: "absolute",
         bottom: 0,
+        flexDirection: "row",
       }}
     >
       <div
@@ -26,16 +27,18 @@ const MyFooter = () => {
             height: "240px",
             borderRight: "1px solid #EAEDEF",
             float: "left",
+            marginRight: "30px",
           }}
         >
           <div>
             <a
               href="#"
               style={{
+                textDecoration: "none",
                 fontSize: "18px",
                 fontWeight: "700",
                 lineHeight: "20px",
-                color: "2f3438",
+                color: "#2f3438",
               }}
             >
               고객센터
@@ -122,276 +125,173 @@ const MyFooter = () => {
             </span>
           </div>
         </div>
-        <div
-          style={{
-            width: "253px",
-            height: "240px",
-            borderRight: "1px solid #EAEDEF",
-            marginLeft: "30px",
-            marginRight: "30px",
-            float: "left",
-          }}
-        >
+        <div className="container">
           <div
+            className="row row-cols-2"
             style={{
-              float: "left",
-              marginRight: "10px",
+              width: "253px",
+              height: "240px",
+              borderRight: "1px solid #EAEDEF",
+              marginRight: "30px",
+              color: "#424242",
             }}
           >
-            <p
+            <div
+              className="col"
               style={{
                 width: "121px",
                 height: "16px",
+                padding: "0",
                 fontSize: "12px",
-                lineHeight: "12px",
-                marginBottom: "20px",
+                lineHeight: "16px",
+                letterSpacing: "-0.3px",
               }}
             >
               회사소개
-            </p>
-            <p
+            </div>
+            <div
+              className="col"
               style={{
                 width: "121px",
                 height: "16px",
+                padding: "0",
                 fontSize: "12px",
-                lineHeight: "12px",
-                marginBottom: "20px",
-              }}
-            >
-              채용정보
-            </p>
-            <p
-              style={{
-                width: "121px",
-                height: "16px",
-                fontSize: "12px",
-                lineHeight: "12px",
-                marginBottom: "20px",
-              }}
-            >
-              이용약관
-            </p>
-            <p
-              style={{
-                width: "121px",
-                height: "16px",
-                fontSize: "12px",
-                lineHeight: "12px",
-                marginBottom: "20px",
-              }}
-            >
-              개인정보 처리방침
-            </p>
-            <p
-              style={{
-                width: "121px",
-                height: "16px",
-                fontSize: "12px",
-                lineHeight: "12px",
-                marginBottom: "20px",
-              }}
-            >
-              공지사항
-            </p>
-            <p
-              style={{
-                width: "121px",
-                height: "16px",
-                fontSize: "12px",
-                lineHeight: "12px",
-                marginBottom: "20px",
-              }}
-            >
-              안전거래센터
-            </p>
-          </div>
-          <div
-            style={{
-              float: "left",
-            }}
-          >
-            <p
-              style={{
-                width: "121px",
-                height: "16px",
-                fontSize: "12px",
-                lineHeight: "12px",
-                marginBottom: "20px",
+                lineHeight: "16px",
+                letterSpacing: "-0.3px",
               }}
             >
               입점신청
-            </p>
-            <p
+            </div>
+            <div
+              className="col"
               style={{
                 width: "121px",
                 height: "16px",
+                padding: "0",
                 fontSize: "12px",
-                lineHeight: "12px",
-                marginBottom: "20px",
+                lineHeight: "16px",
+                letterSpacing: "-0.3px",
+              }}
+            >
+              채용정보
+            </div>
+            <div
+              className="col"
+              style={{
+                width: "121px",
+                height: "16px",
+                padding: "0",
+                fontSize: "12px",
+                lineHeight: "16px",
+                letterSpacing: "-0.3px",
               }}
             >
               제휴/광고 문의
-            </p>
-            <p
+            </div>
+            <div
+              className="col"
               style={{
                 width: "121px",
                 height: "16px",
+                padding: "0",
                 fontSize: "12px",
-                lineHeight: "12px",
-                marginBottom: "20px",
+                lineHeight: "16px",
+                letterSpacing: "-0.3px",
+              }}
+            >
+              이용약관
+            </div>
+            <div
+              className="col"
+              style={{
+                width: "121px",
+                height: "16px",
+                padding: "0",
+                fontSize: "12px",
+                lineHeight: "16px",
+                letterSpacing: "-0.3px",
               }}
             >
               사업자 구매 회원
-            </p>
-            <p
+            </div>
+            <div
+              className="col"
               style={{
                 width: "121px",
                 height: "16px",
+                padding: "0",
                 fontSize: "12px",
-                lineHeight: "12px",
-                marginBottom: "20px",
+                lineHeight: "16px",
+                letterSpacing: "-0.3px",
+              }}
+            >
+              개인정보 처리방침
+            </div>
+            <div
+              className="col"
+              style={{
+                width: "121px",
+                height: "16px",
+                padding: "0",
+                fontSize: "12px",
+                lineHeight: "16px",
+                letterSpacing: "-0.3px",
               }}
             >
               시공파트너 안내
-            </p>
-            <p
+            </div>
+            <div
+              className="col"
               style={{
                 width: "121px",
                 height: "16px",
+                padding: "0",
                 fontSize: "12px",
-                lineHeight: "12px",
-                marginBottom: "20px",
+                lineHeight: "16px",
+                letterSpacing: "-0.3px",
+              }}
+            >
+              공지사항
+            </div>
+            <div
+              className="col"
+              style={{
+                width: "121px",
+                height: "16px",
+                padding: "0",
+                fontSize: "12px",
+                lineHeight: "16px",
+                letterSpacing: "-0.3px",
               }}
             >
               상품광고 소개
-            </p>
-            <p
+            </div>
+            <div
+              className="col"
               style={{
                 width: "121px",
                 height: "16px",
+                padding: "0",
                 fontSize: "12px",
-                lineHeight: "12px",
-                marginBottom: "20px",
+                lineHeight: "16px",
+                letterSpacing: "-0.3px",
+              }}
+            >
+              안전거래센터
+            </div>
+            <div
+              className="col"
+              style={{
+                width: "121px",
+                height: "16px",
+                padding: "0",
+                fontSize: "12px",
+                lineHeight: "16px",
+                letterSpacing: "-0.3px",
               }}
             >
               고객의 소리
-            </p>
-          </div>
-        </div>
-        <div
-          style={{
-            marginLeft: "30px",
-            fontSize: "12px",
-            lineHeight: "20px",
-            letterSpacing: "-0.3px",
-            color: "#828c94",
-          }}
-        >
-          (주)버킷플레이스 | 대표이사 이승재 | 서울 서초구 서초대로74길 4
-          삼성생명서초타워 25층, 27층
-          <tr />
-          contact@bucketplace.net|사업자등록번호 119-86-91245 사업자정보확인
-          <tr />
-          통신판매업신고번호 제2018-서울서초-0580호
-          <p
-            style={{
-              marginTop: "10px",
-              fontSize: "10px",
-              lineHeight: "14px",
-              whiteSpace: "nowrap",
-              letterSpacing: "-0.3px",
-              color: "#828c94",
-            }}
-          >
-            고객님이 현금결제한 금액에 대해 우리은행과 채무지급보증 계약을
-            체결하여 안전거래를 보장하고 있습니다. 서비스가입사실확인
-          </p>
-          <div
-            style={{
-              display: "flex",
-
-              height: "40px",
-              gap: "6px",
-              WebkitBoxAlign: "center",
-              alignItems: "center",
-              WebkitBoxPack: "center",
-              justifyContent: "center",
-              border: "1px solid rgba(0, 0, 0, 0.08)",
-              float: "left",
-            }}
-          >
-            <img
-              width="32px"
-              alt="8f5b2c2e98ea1196"
-              src="https://github.com/icebear2n2/BE-Community-Service/assets/87232411/e67f4ab2-31ba-49d4-b701-97c0e87083d1"
-              style={{
-                overflowClipMargin: "content-box",
-                overflow: "clip",
-                float: "left",
-              }}
-            />
-            <div
-              style={{
-                width: "90%",
-                height: "28px",
-                float: "left",
-                fontSize: "10px",
-                lineHeight: "14px",
-                letterSpacing: "-0.3px",
-                whiteSpace: "nowrap",
-                marginRight: "6px 7px 6px 7px",
-              }}
-            >
-              오늘의집 서비스 운영
-              <tr />
-              2021. 09. 08 ~ 2024. 09. 07
             </div>
-          </div>
-          <div
-            style={{
-              width: "102px",
-              height: "40px",
-              marginLeft: "6px",
-              gap: "6px",
-              WebkitBoxAlign: "center",
-              alignItems: "center",
-              WebkitBoxPack: "center",
-              justifyContent: "center",
-              border: "1px solid rgba(0, 0, 0, 0.08)",
-              float: "left",
-              textAlign: "center",
-              paddingTop: "4px",
-              paddingBottom: "4px",
-            }}
-          >
-            <img
-              width="32"
-              alt="d5fb816a58bb6a06"
-              src="https://github.com/icebear2n2/BE-Community-Service/assets/87232411/61dbfe97-aebd-4365-b058-68623c76c574"
-            />
-          </div>
-          <div
-            style={{
-              width: "102px",
-              height: "40px",
-              marginLeft: "6px",
-              gap: "6px",
-              WebkitBoxAlign: "center",
-              alignItems: "center",
-              WebkitBoxPack: "center",
-              justifyContent: "center",
-              border: "1px solid rgba(0, 0, 0, 0.08)",
-              float: "left",
-              textAlign: "center",
-              paddingTop: "4px",
-              paddingBottom: "4px",
-            }}
-          >
-            <img
-              width="32"
-              alt="d5fb816a58bb6a06"
-              src="https://github.com/icebear2n2/BE-Community-Service/assets/87232411/1c236831-d266-4bca-b4be-9ba60d9cb3e8"
-            />
           </div>
         </div>
       </div>
