@@ -19,22 +19,25 @@ const MyHeader = () => {
 
   return (
     <div>
-      <Navbar color="light" light expand="lg">
+      <Navbar
+        color="white"
+        light
+        expand="lg"
+        style={{ height: "81px", borderBottom: "1px solid #EAEDEF" }}
+      >
         <div
           className="container-fluid"
           style={{
             display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
+            margin: "0 108.500px 0 108.500px",
+            padding: "10px 60px 10px 60px",
           }}
         >
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <NavbarBrand
               href="#"
-              style={{
-                margin: "auto",
-              }}
+              style={{ margin: "-4px", padding: "4px", marginRight: "45px" }}
             >
               <svg
                 className="css-1qa5cvy"
@@ -76,48 +79,72 @@ const MyHeader = () => {
               </svg>
             </NavbarBrand>
             <Nav className="me-auto" navbar>
-              <NavItem style={{ margin: "auto" }}>
+              <NavItem
+                style={{
+                  marginTop: "30px",
+                  marginBottom: "24px",
+                  marginRight: "21px",
+                }}
+              >
                 <NavLink href="#">
                   <span
                     style={{
                       color: "#35C5F0",
-                      fontSize: "16px",
+                      fontSize: "18px",
                       fontStyle: "normal",
                       fontWeight: "700",
                       lineHeight: "18px" /* 112.5% */,
                       letterSpacing: "-0.3px",
+                      borderRadius: "3px",
+                      whiteSpace: "nowrap",
                     }}
                   >
                     커뮤니티
                   </span>
                 </NavLink>
               </NavItem>
-              <NavItem style={{ margin: "auto" }}>
+              <NavItem
+                style={{
+                  marginTop: "30px",
+                  marginBottom: "24px",
+                  marginRight: "21px",
+                }}
+              >
                 <NavLink href="#">
                   <span
                     style={{
                       color: "#2F3438",
-                      fontSize: "16px",
+                      fontSize: "18px",
                       fontStyle: "normal",
                       fontWeight: "700",
                       lineHeight: "18px" /* 112.5% */,
                       letterSpacing: "-0.3px",
+                      borderRadius: "3px",
+                      whiteSpace: "nowrap",
                     }}
                   >
                     쇼핑
                   </span>
                 </NavLink>
               </NavItem>
-              <NavItem style={{ margin: "auto" }}>
+              <NavItem
+                style={{
+                  marginTop: "30px",
+                  marginBottom: "24px",
+                  marginRight: "102px",
+                }}
+              >
                 <NavLink href="#">
                   <span
                     style={{
                       color: "#2F3438",
-                      fontSize: "16px",
+                      fontSize: "18px",
                       fontStyle: "normal",
                       fontWeight: "700",
                       lineHeight: "18px" /* 112.5% */,
                       letterSpacing: "-0.3px",
+                      borderRadius: "3px",
+                      whiteSpace: "nowrap",
                     }}
                   >
                     이사/시공/생활
@@ -125,22 +152,45 @@ const MyHeader = () => {
                 </NavLink>
               </NavItem>
               <NavItem style={{ margin: "auto" }}>
-                <form
+                <div
                   className="d-flex"
                   style={{
-                    width: "339px",
+                    width: "296px",
                     height: "40px",
-                    paddingRight: "14px",
-                    paddingLeft: "14px",
+                    border: "1px solid #f7f9fa", // 박스 라인 스타일 추가
+                    borderRadius: "4px", // 박스의 모서리를 둥글게 만듭니다.
+                    padding: "0 14px 0 14px",
+                    marginRight: "21px",
                   }}
                 >
-                  <Input
+                  <svg
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style={{
+                      margin: "auto",
+                      width: "29px",
+                      height: "24px",
+                      paddingRight: "6px",
+                    }}
+                  >
+                    <path
+                      fill="#828c94"
+                      d="m18.031 16.617l4.283 4.282l-1.415 1.415l-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9s9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617Zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.867-3.133-7-7-7s-7 3.133-7 7s3.133 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15Z"
+                    />
+                  </svg>
+                  <input
                     type="search"
                     placeholder="통합검색"
                     aria-label="Search"
                     className="me-2"
+                    style={{
+                      border: "none", // Input 라인 숨김
+                      outline: "none", // 포커스 시 발생하는 테두리 제거
+                      width: "90%", // Input 요소를 div에 꽉 차게 설정
+                      color: "#f7f9fa",
+                    }}
                   />
-                </form>
+                </div>
               </NavItem>
               {/*<NavItem style={{ paddingRight: "2px", paddingLeft: "2px" }}>*/}
               {/*  <NavLink href="#">*/}
@@ -191,7 +241,7 @@ const MyHeader = () => {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill="#000000"
+                      fill="#2f3438"
                       d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607L1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4a2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4a2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2a1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2a1 1 0 0 1 0-2z"
                     />
                   </svg>
@@ -199,21 +249,43 @@ const MyHeader = () => {
               </NavItem>
               <NavItem style={{ margin: "auto" }}>
                 <NavLink href="#">
-                  <span style={{ borderLeft: "1px solid #EAEDEF" }}>
+                  <span
+                    style={{
+                      color: "#2f3438",
+                      fontSize: "14px",
+                      whiteSpace: "nowrap",
+                    }}
+                  >
                     로그인
                   </span>
                 </NavLink>
               </NavItem>
               <NavItem style={{ margin: "auto" }}>
                 <NavLink href="#">
-                  <span style={{ borderLeft: "1px solid #EAEDEF" }}>
+                  <span
+                    style={{
+                      borderLeft: "1px solid #EAEDEF",
+                      color: "#2f3438",
+                      fontSize: "14px",
+                      paddingLeft: "10px",
+                      whiteSpace: "nowrap",
+                    }}
+                  >
                     회원가입
                   </span>
                 </NavLink>
               </NavItem>
               <NavItem style={{ margin: "auto" }}>
                 <NavLink href="#">
-                  <span style={{ borderLeft: "1px solid #EAEDEF" }}>
+                  <span
+                    style={{
+                      borderLeft: "1px solid #EAEDEF",
+                      color: "#2f3438",
+                      fontSize: "14px",
+                      paddingLeft: "10px",
+                      whiteSpace: "nowrap",
+                    }}
+                  >
                     고객센터
                   </span>
                 </NavLink>
@@ -231,10 +303,24 @@ const MyHeader = () => {
                       gap: "6.31px",
                       borderRadius: "4px",
                       background: "#35C5F0",
+                      fontSize: "14px",
                       color: "white",
                     }}
                   >
                     글쓰기
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#ffffff"
+                        stroke-linecap="square"
+                        d="m14 5l-6.5 7L1 5"
+                      />
+                    </svg>
                   </div>
                 </NavLink>
               </NavItem>
