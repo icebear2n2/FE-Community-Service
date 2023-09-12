@@ -23,9 +23,9 @@ const MyHeader = () => {
         <div
           className="container-fluid"
           style={{
-            height: "80px",
-            margin: "0px 120px 0px 120px",
-            padding: "10px 60px 10px 60px",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
           }}
         >
           <NavbarToggler onClick={toggle} />
@@ -33,13 +33,10 @@ const MyHeader = () => {
             <NavbarBrand
               href="#"
               style={{
-                display: "table-cell",
-                verticalAlign: "middle",
-                margin: "21px, 56px, 21px, 45px",
+                margin: "auto",
               }}
             >
               <svg
-                style={{ marginRight: "22px" }}
                 className="css-1qa5cvy"
                 xmlns="http://www.w3.org/2000/svg"
                 width="74"
@@ -79,33 +76,55 @@ const MyHeader = () => {
               </svg>
             </NavbarBrand>
             <Nav className="me-auto" navbar>
-              <NavItem>
+              <NavItem style={{ margin: "auto" }}>
                 <NavLink href="#">
                   <span
                     style={{
-                      fontSize: "18px",
-                      marginRight: "5px",
+                      color: "#35C5F0",
+                      fontSize: "16px",
+                      fontStyle: "normal",
+                      fontWeight: "700",
+                      lineHeight: "18px" /* 112.5% */,
+                      letterSpacing: "-0.3px",
                     }}
                   >
                     커뮤니티
                   </span>
                 </NavLink>
               </NavItem>
-              <NavItem>
+              <NavItem style={{ margin: "auto" }}>
                 <NavLink href="#">
-                  <span style={{ fontSize: "18px", marginRight: "5px" }}>
+                  <span
+                    style={{
+                      color: "#2F3438",
+                      fontSize: "16px",
+                      fontStyle: "normal",
+                      fontWeight: "700",
+                      lineHeight: "18px" /* 112.5% */,
+                      letterSpacing: "-0.3px",
+                    }}
+                  >
                     쇼핑
                   </span>
                 </NavLink>
               </NavItem>
-              <NavItem>
+              <NavItem style={{ margin: "auto" }}>
                 <NavLink href="#">
-                  <span style={{ fontSize: "18px", marginRight: "80px" }}>
+                  <span
+                    style={{
+                      color: "#2F3438",
+                      fontSize: "16px",
+                      fontStyle: "normal",
+                      fontWeight: "700",
+                      lineHeight: "18px" /* 112.5% */,
+                      letterSpacing: "-0.3px",
+                    }}
+                  >
                     이사/시공/생활
                   </span>
                 </NavLink>
               </NavItem>
-              <NavItem>
+              <NavItem style={{ margin: "auto" }}>
                 <form
                   className="d-flex"
                   style={{
@@ -122,6 +141,102 @@ const MyHeader = () => {
                     className="me-2"
                   />
                 </form>
+              </NavItem>
+              {/*<NavItem style={{ paddingRight: "2px", paddingLeft: "2px" }}>*/}
+              {/*  <NavLink href="#">*/}
+              {/*    <svg*/}
+              {/*      width="23px"*/}
+              {/*      height="24px"*/}
+              {/*      viewBox="0 0 24 24"*/}
+              {/*      xmlns="http://www.w3.org/2000/svg"*/}
+              {/*    >*/}
+              {/*      <path*/}
+              {/*        fill="none"*/}
+              {/*        stroke="#000000"*/}
+              {/*        stroke-linecap="round"*/}
+              {/*        stroke-linejoin="round"*/}
+              {/*        stroke-width="1.5"*/}
+              {/*        d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25L4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"*/}
+              {/*      />*/}
+              {/*    </svg>*/}
+              {/*  </NavLink>*/}
+              {/*</NavItem>*/}
+              {/*<NavItem style={{ paddingRight: "2px", paddingLeft: "2px" }}>*/}
+              {/*  <NavLink href="#">*/}
+              {/*    <svg*/}
+              {/*      width="23px"*/}
+              {/*      height="24px"*/}
+              {/*      viewBox="0 0 24 24"*/}
+              {/*      xmlns="http://www.w3.org/2000/svg"*/}
+              {/*    >*/}
+              {/*      <path*/}
+              {/*        fill="#000000"*/}
+              {/*        d="M12 1c3.681 0 7 2.565 7 6v4.539c0 .642.189 1.269.545 1.803l2.2 3.298A1.517 1.517 0 0 1 20.482 19H15.5a3.5 3.5 0 1 1-7 0H3.519a1.518 1.518 0 0 1-1.265-2.359l2.2-3.299A3.25 3.25 0 0 0 5 11.539V7c0-3.435 3.318-6 7-6ZM6.5 7v4.539a4.75 4.75 0 0 1-.797 2.635l-2.2 3.298l-.003.01l.001.007l.004.006l.006.004l.007.001h16.964l.007-.001l.006-.004l.004-.006l.001-.006a.017.017 0 0 0-.003-.01l-2.199-3.299a4.753 4.753 0 0 1-.798-2.635V7c0-2.364-2.383-4.5-5.5-4.5S6.5 4.636 6.5 7ZM14 19h-4a2 2 0 1 0 4 0Z"*/}
+              {/*      />*/}
+              {/*    </svg>*/}
+              {/*  </NavLink>*/}
+              {/*</NavItem>*/}
+              <NavItem
+                style={{
+                  margin: "auto",
+                  paddingRight: "2px",
+                  paddingLeft: "2px",
+                }}
+              >
+                <NavLink href="#">
+                  <svg
+                    width="23px"
+                    height="24px"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="#000000"
+                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607L1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4a2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4a2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2a1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2a1 1 0 0 1 0-2z"
+                    />
+                  </svg>
+                </NavLink>
+              </NavItem>
+              <NavItem style={{ margin: "auto" }}>
+                <NavLink href="#">
+                  <span style={{ borderLeft: "1px solid #EAEDEF" }}>
+                    로그인
+                  </span>
+                </NavLink>
+              </NavItem>
+              <NavItem style={{ margin: "auto" }}>
+                <NavLink href="#">
+                  <span style={{ borderLeft: "1px solid #EAEDEF" }}>
+                    회원가입
+                  </span>
+                </NavLink>
+              </NavItem>
+              <NavItem style={{ margin: "auto" }}>
+                <NavLink href="#">
+                  <span style={{ borderLeft: "1px solid #EAEDEF" }}>
+                    고객센터
+                  </span>
+                </NavLink>
+              </NavItem>
+              <NavItem style={{ margin: "auto" }}>
+                <NavLink href="#">
+                  <div
+                    style={{
+                      display: "flex",
+                      width: "92.31px",
+                      height: "40px",
+                      padding: "11px 16px",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      gap: "6.31px",
+                      borderRadius: "4px",
+                      background: "#35C5F0",
+                      color: "white",
+                    }}
+                  >
+                    글쓰기
+                  </div>
+                </NavLink>
               </NavItem>
             </Nav>
           </Collapse>
