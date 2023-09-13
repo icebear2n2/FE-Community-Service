@@ -18,12 +18,15 @@ const MyHeader = () => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
+    <div style={{ position: "sticky", top: 0 }}>
       <Navbar
         color="white"
         light
         expand="lg"
-        style={{ height: "81px", borderBottom: "1px solid #EAEDEF" }}
+        style={{
+          height: "81px",
+          borderBottom: "1px solid #EAEDEF",
+        }}
       >
         <div
           className="container-fluid"
